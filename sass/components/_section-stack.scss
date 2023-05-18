@@ -1,0 +1,38 @@
+.section-stack {
+    border-top: 3px solid #898a9e;
+    border-radius: 2%;
+  }
+  
+  .section-stack__item::before {
+    content: '•';
+    margin-right: 5px;
+  }
+  
+  .section-stack__list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .section-stack__item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    gap: 5px;
+  }
+  
+  .section-stack__title {
+   display: flex;
+   justify-content: center;
+   color: #fff;
+   text-transform: uppercase;
+   margin-bottom: 15px;
+  }
+  
+  .section-stack__icon {
+    fill: #f5deb3;
+  }

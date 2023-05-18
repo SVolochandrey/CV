@@ -1,0 +1,24 @@
+.section-soft__title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .section-soft__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .section-soft__item {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+  
+  .section-soft__item::before {
+    content: '•';
+    margin-right: 5px;
+  }

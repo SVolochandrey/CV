@@ -1,0 +1,66 @@
+body{
+    font-family: 'Roboto', 'sans-serif';
+    letter-spacing: 0.03em;
+    background: linear-gradient(45deg, #080808, #2b3269);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+  padding: 0;
+  margin: 0;
+  }
+  
+  h3 {
+    font-family: 'Raleway';
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media screen and (max-width: 479px) {
+      max-width: 380px;
+    }
+  
+    @media screen and (min-width:480px) and (max-width:767px) {
+      max-width:480px;
+    }
+  
+    @media screen and (min-width:768px) and (max-width:1200px) {
+      max-width: 768px;
+    }
+  }
+  
+  .section-container {
+    @media screen and (min-width:768px) {
+      display:flex;
+    }
+  }

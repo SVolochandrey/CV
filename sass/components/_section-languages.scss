@@ -1,0 +1,23 @@
+.section-lang__title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .section-lang__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .section-lang__item {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .section-lang__item::before {
+    content: '•';
+    margin-right: 5px;
+  }

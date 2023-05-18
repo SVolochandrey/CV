@@ -1,0 +1,24 @@
+.section-educ {
+    border-top: 3px solid #898a9e;
+    border-radius: 2%;
+  }
+  
+  .section-educ__title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .section-educ__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section-educ__item {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.1;
+  }

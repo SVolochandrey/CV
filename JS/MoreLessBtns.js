@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var button = document.querySelector(".read-more-button");
   var description = document.querySelector(".section-summary__descr");
   var isExpanded = false;
-  var descriptionHeight = "200px";
+  var descriptionHeight = "150px";
   var scrollOffset = 20;
 
   description.style.maxHeight = descriptionHeight;
-  description.style.overflow = "hidden";
+  // description.style.overflow = "hidden";
 
   button.addEventListener("click", function () {
     if (isExpanded) {
