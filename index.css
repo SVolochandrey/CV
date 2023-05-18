@@ -8,6 +8,7 @@ body{
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -15,15 +16,21 @@ a {
 }
 
 section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  @media screen and (min-width: 380px) and (max-width: 479px) {
+    max-width: 380px;
+  }
 }
 
 /* SECTION-PREVIEW */
 
 .section-preview {
   padding-bottom: 0;
-  border-bottom: 1px solid #898a9e;
+  border-bottom: 3px solid #898a9e;
   border-radius: 2%;
 }
 
@@ -108,7 +115,7 @@ align-items: center;
 /* SECTION-STACK */
 
 .section-stack__item::before {
-  content: '◦';
+  content: '•';
   margin-right: 5px;
 }
 
@@ -149,7 +156,24 @@ align-items: center;
 
 .section-proj {
   border-top: 3px solid #898a9e;
+  border-bottom: 3px solid #898a9e;
   border-radius: 2%;
+}
+
+.section-proj__title {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto 35px;
+}
+
+.section-proj__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .section-proj__descr {
@@ -157,4 +181,148 @@ align-items: center;
   font-size: 16px;
   color: #fff;
   letter-spacing: 0.03rem;
+}
+
+.section-proj__link {
+  color: #b4b1ff;
+  text-decoration: underline;
+}
+
+/* SECTION LANGUAGES */
+
+.section-lang__title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto 25px;
+}
+
+.section-lang__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-lang__item {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 0.03rem;
+}
+
+.section-lang__item::before {
+  content: '•';
+  margin-right: 5px;
+}
+
+/* SECTION EDUCATION */
+
+.section-educ {
+  border-top: 3px solid #898a9e;
+  border-radius: 2%;
+}
+
+.section-educ__title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.section-educ__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-educ__item {
+  color: #fff;
+  font-size: 21px;
+  font-family: sans-serif;
+  letter-spacing: 0.03rem;
+  line-height: 1.1;
+}
+
+/* SUMMARY SECTION */
+
+.section-summary {
+
+}
+
+.section-summary__title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin: 0 auto 30px;
+}
+
+.section-summary__descr {
+  color: #fff;
+  font-size: 26px;
+  font-family: sans-serif;
+  letter-spacing: 0.03rem;
+  line-height: 1.1;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 0.7s ease;
+  max-height: 200px;
+  margin: 0 auto;
+}
+
+.read-more-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #0077b5;
+  width: max-content;
+  font-size: 20px;
+  padding: 0;
+  transition: color 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+  &&:hover,
+  &&:focus {
+    color: #82c5fc;
+  }
+}
+
+/* SECTION SOFT SKILLS */
+
+.section-soft {
+
+}
+
+.section-soft__title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.section-soft__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-soft__item {
+  color: #fff;
+  font-size: 30px;
+  font-family: sans-serif;
+  letter-spacing: 0.03rem;
+  line-height: 1.1;
+}
+
+.section-soft__item::before {
+  content: '•';
+  margin-right: 5px;
 }
