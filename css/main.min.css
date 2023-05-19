@@ -2,7 +2,7 @@
 body {
   font-family: "Roboto", "sans-serif";
   letter-spacing: 0.03em;
-  background: linear-gradient(45deg, #080808, #2b3269);
+  background: linear-gradient(89deg, #000000, #8e92b5);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -68,6 +68,20 @@ section {
   .section-container {
     display: flex;
   }
+}
+
+:root {
+  --title-color: #feffe3;
+  --color-logo-accent: #2196F3;
+  --color-logo: #000000;
+  --color-background-1: #FFFFFF;
+  --color-background-2: #2F303A;
+  --color-background-3: #F5F5F5;
+  --color-background-4: #F5F4FA;
+  --color-text: #757575;
+  --color-border-links: #AFB1B8;
+  --color-dark-blue: #188CE8;
+  --border-color: #EEEEEE;
 }
 
 .section-educ {
@@ -147,7 +161,7 @@ section {
 }
 
 .section-preview__descr > h1 {
-  color: #fff;
+  color: var(--title-color);
   font-size: 23px;
   font-family: "Raleway";
   text-transform: uppercase;
@@ -155,7 +169,7 @@ section {
 }
 
 .section-preview__descr > p {
-  color: #fff;
+  color: var(--title-color);
   font-size: 25px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -165,9 +179,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 7px;
   padding: 0;
-  margin: 20px 0 25px 0;
+  margin: 10px 0 15px 0;
 }
 
 .section-preview__socitem > a {
@@ -179,14 +193,16 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #8a8a8a;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ffd6fe;
+  transition: background-color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-preview__socitem > a:hover {
   background-color: #fff;
+}
+
+.section-preview__socitem:nth-child(1) > a:hover {
+  fill: #051218;
 }
 
 .section-preview__socitem:nth-child(2) > a:hover {
@@ -206,6 +222,10 @@ section {
   fill: #118238;
 }
 
+.section-preview__socitem:nth-child(6) > a:hover {
+  fill: #bb241c;
+}
+
 .section-preview__socials {
   display: flex;
   flex-direction: column;
@@ -217,6 +237,13 @@ section {
   .section-preview__media {
     flex-direction: row;
     justify-content: space-around;
+  }
+  .section-preview__soclinks {
+    gap: 5px;
+  }
+  .section-preview__socitem > a {
+    width: 40px;
+    height: 40px;
   }
   .section-preview__descr > h1,
   .section-preview__descr > p {
@@ -350,7 +377,7 @@ section {
 
 .section-summary__descr {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.17;
   overflow: scroll;
   opacity: 1;
@@ -359,6 +386,7 @@ section {
 }
 
 .read-more-button {
+  margin-top: 5px;
   cursor: pointer;
   background: none;
   border: none;
