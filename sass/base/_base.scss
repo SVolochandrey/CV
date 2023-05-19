@@ -1,7 +1,7 @@
 body{
   font-family: "Roboto", "sans-serif";
   letter-spacing: 0.03em;
-  background: linear-gradient(89deg, #000000, #8e92b5);
+  background: linear-gradient(89deg, #181818, #3f4264);
   background-size: cover;
   background-repeat: no-repeat;
   }
@@ -21,6 +21,7 @@ body{
   h3 {
     font-family: 'Raleway';
     font-size: 24px;
+    color: var(--subtitle-color);
   }
   
   ul {
@@ -62,5 +63,8 @@ body{
   .section-container {
     @media screen and (min-width:768px) {
       display:flex;
+      gap: 9px;
+      border-top: 1.5px solid #898a9e;
+      border-bottom: 1.5px solid #898a9e;
     }
   }

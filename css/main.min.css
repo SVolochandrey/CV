@@ -2,7 +2,7 @@
 body {
   font-family: "Roboto", "sans-serif";
   letter-spacing: 0.03em;
-  background: linear-gradient(89deg, #000000, #8e92b5);
+  background: linear-gradient(89deg, #181818, #3f4264);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,6 +22,7 @@ ul {
 h3 {
   font-family: "Raleway";
   font-size: 24px;
+  color: var(--subtitle-color);
 }
 
 ul {
@@ -67,12 +68,15 @@ section {
 @media screen and (min-width: 768px) {
   .section-container {
     display: flex;
+    gap: 9px;
+    border-top: 1.5px solid #898a9e;
+    border-bottom: 1.5px solid #898a9e;
   }
 }
 
 :root {
-  --title-color: #feffe3;
-  --color-logo-accent: #2196F3;
+  --title-color: #fffff5;
+  --subtitle-color: #ededed;
   --color-logo: #000000;
   --color-background-1: #FFFFFF;
   --color-background-2: #2F303A;
@@ -92,7 +96,6 @@ section {
 .section-educ__title {
   display: flex;
   justify-content: center;
-  color: #fff;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -101,6 +104,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 1px;
+  background: linear-gradient(130deg, #303030, #1c1c1c);
 }
 
 .section-educ__item {
@@ -109,10 +116,14 @@ section {
   line-height: 1.1;
 }
 
+@media screen and (min-width: 768px) {
+  .section-educ {
+    border: none;
+  }
+}
 .section-lang__title {
   display: flex;
   justify-content: center;
-  color: #fff;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -124,7 +135,7 @@ section {
   border-radius: 8px;
   padding: 5px;
   box-shadow: 0px 0px 3px 1px;
-  background: linear-gradient(90deg, #1c1c1c, transparent);
+  background: linear-gradient(90deg, #211515, #343434);
 }
 
 .section-lang__item {
@@ -197,7 +208,7 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #ffd6fe;
+  background-color: #cddaff;
   transition: background-color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -263,9 +274,8 @@ section {
 .section-proj__title {
   display: flex;
   justify-content: center;
-  color: #fff;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .section-proj__list {
@@ -274,8 +284,8 @@ section {
   gap: 15px;
   border-radius: 8px;
   padding: 5px;
-  box-shadow: 0px 0px 3px 1px;
-  background: linear-gradient(180deg, black, transparent);
+  box-shadow: 0px 0px 3px 0px;
+  background: linear-gradient(91deg, black, #262626);
 }
 
 .section-proj__descr {
@@ -315,10 +325,24 @@ section {
   transform: translateX(-50%);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-proj {
+    border: none;
+  }
+  .section-proj__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+  .section-proj__descr {
+    width: calc((100% - 25px) / 2);
+    height: calc((100% - 25px) / 3);
+  }
+}
 .section-soft__title {
   display: flex;
   justify-content: center;
-  color: #fff;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -378,7 +402,6 @@ section {
 .section-stack__title {
   display: flex;
   justify-content: center;
-  color: #fff;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -387,10 +410,14 @@ section {
   fill: #f5deb3;
 }
 
+@media screen and (min-width: 768px) {
+  .section-stack {
+    border: none;
+  }
+}
 .section-summary__title {
   display: flex;
   justify-content: center;
-  color: #fff;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -434,7 +461,6 @@ section {
 .section-exp__title {
   display: flex;
   justify-content: center;
-  color: #fff;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -455,4 +481,18 @@ section {
 .section-exp__item {
   color: #fff;
   font-size: 15px;
+}
+
+.section-exp__container {
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 1px;
+  background: linear-gradient(200deg, #191919, transparent);
+}
+
+@media screen and (min-width: 768px) {
+  .section-exp {
+    margin: auto;
+    border: none;
+  }
 }/*# sourceMappingURL=main.min.css.map */
