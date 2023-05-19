@@ -121,6 +121,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 1px;
+  background: linear-gradient(90deg, #1c1c1c, transparent);
 }
 
 .section-lang__item {
@@ -268,11 +272,19 @@ section {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 1px;
+  background: linear-gradient(180deg, black, transparent);
 }
 
 .section-proj__descr {
   font-size: 16px;
   color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 0px;
+  background: linear-gradient(180deg, black, transparent);
 }
 
 .section-proj__link {
@@ -315,6 +327,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 3px;
+  background: linear-gradient(270deg, black, transparent);
 }
 
 .section-soft__item {
@@ -344,6 +360,10 @@ section {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 1px;
+  background: linear-gradient(180deg, black, transparent);
 }
 
 .section-stack__item {
@@ -383,6 +403,10 @@ section {
   opacity: 1;
   transition: max-height 0.7s ease;
   max-height: 150px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 0px 3px 1px;
+  background: linear-gradient(180deg, black, transparent);
 }
 
 .read-more-button {
