@@ -15,7 +15,60 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__nav container">
+        <button
+          class="button-menu is-open"
+          type="button"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="30px"
+            height="30px"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="button-menu__hamburger"
+              href="./images/symbolDefs.svg#menu"
+            ></use>
+            <use
+              class="button-menu__cros"
+              href="./images/symbolDefs.svg#close-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu__container" id="menu-container" data-menu>
+          <nav class="main-nav">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="#summary" class="header__link header__link--active"
+                  >Summary</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="#tech-skills" class="header__link">Tech skills</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#proj-exp" class="header__link">Project experience</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#soft-skills" class="header__link">Soft skills</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#work-exp" class="header__link">Work experience</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#languages" class="header__link">Languages</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#education" class="header__link">Education</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <!-- PREVIEW SECTION -->
     <div class="container">
       <section class="section-preview">
@@ -106,7 +159,7 @@
     </div>
     <!-- SUMMARY SECTION -->
     <div class="container">
-      <section class="section-summary">
+      <section class="section-summary" id="summary">
         <h3 class="section-summary__title">Summary</h3>
         <p class="section-summary__descr">
           I`m a beginner front-end developer with good knowledge in HTML, CSS,
@@ -142,7 +195,7 @@
     </div>
     <div class="section-container container">
       <!-- TECH SKILLS SECTION -->
-      <section class="section-stack">
+      <section class="section-stack" id="tech-skills">
         <h3 class="section-stack__title">Tech skills</h3>
         <ul class="section-stack__list">
           <li class="section-stack__item">
@@ -190,7 +243,7 @@
         </ul>
       </section>
       <!-- PROJECT EXPERIENCE -->
-      <section class="section-proj">
+      <section class="section-proj" id="proj-exp">
         <h3 class="section-proj__title">project experience</h3>
         <ul class="section-proj__list">
           <li class="section-proj__descr">
@@ -254,7 +307,7 @@
     </div>
     <div class="section-container container">
       <!-- SECTION SOFT SKILLS -->
-      <section class="section-soft">
+      <section class="section-soft" id="soft-skills">
         <h3 class="section-soft__title">Soft skills</h3>
         <ul class="section-soft__list">
           <li class="section-soft__item">Creativity</li>
@@ -264,7 +317,7 @@
         </ul>
       </section>
       <!-- WORK EXPERIENCE SECTION -->
-      <section class="section-exp">
+      <section class="section-exp" id="work-exp">
         <h3 class="section-exp__title">Work experience</h3>
         <div class="section-exp__container">
           <p class="section-exp__name">
@@ -272,12 +325,12 @@
           </p>
           <ul class="section-exp__list">
             <li class="section-exp__item">
-              ● Information search on the Internet
+              Information search on the Internet
             </li>
-            <li class="section-exp__item">● Image editing</li>
-            <li class="section-exp__item">● Writing product descriptions</li>
+            <li class="section-exp__item">Image editing</li>
+            <li class="section-exp__item">Writing product descriptions</li>
             <li class="section-exp__item">
-              ● Adding product cards to the website
+              Adding product cards to the website
             </li>
           </ul>
         </div>
@@ -285,16 +338,16 @@
     </div>
     <div class="section-container container">
       <!-- LANGUAGES SECTION -->
-      <section class="section-lang">
+      <section class="section-lang" id="languages">
         <h3 class="section-lang__title">Languages</h3>
         <ul class="section-lang__list">
-          <li class="section-lang__item">English - Intermideate</li>
-          <li class="section-lang__item">Ukrainian - Native</li>
-          <li class="section-lang__item">Russian - Native</li>
+          <li class="section-lang__item">English - B1</li>
+          <li class="section-lang__item">Ukrainian - C2</li>
+          <li class="section-lang__item">Russian - C2</li>
         </ul>
       </section>
       <!-- EDUCATION SECTION -->
-      <section class="section-educ">
+      <section class="section-educ" id="education">
         <h3 class="section-educ__title">Education</h3>
         <ul class="section-educ__list">
           <li class="section-educ__item">
@@ -308,5 +361,6 @@
       </section>
     </div>
     <script src="./JS/MoreLessBtns.js"></script>
+    <script src="./JS/mob-menu.js"></script>
   </body>
 </html>

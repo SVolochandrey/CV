@@ -1,0 +1,97 @@
+.button-menu {
+    display: inline-flex;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+    
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+    }
+    
+    .button-menu__cros {
+    fill: var(--color-primary);
+    cursor: pointer;
+    
+    &:hover,
+    &:focus {
+    fill: var(--color-logo-accent);
+    }
+    }
+    
+    .button-menu__hamburger {
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    
+    .button-menu .button-menu__cros {
+    display: block;
+    transition: fill 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    
+    .button-menu.is-open .button-menu__cros {
+    display: none;
+    }
+    
+    .button-menu .button-menu__hamburger {
+    display: none;
+    }
+    
+    .button-menu.is-open .button-menu__hamburger {
+    display: block;
+    }
+    
+    .menu__container {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    z-index: 1;
+    background-color: var(--color-background-1);
+    padding: 48px 40px;
+    
+    @media screen and (max-width: 767px) {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    
+    display: block;
+    transform: scaleX(0);
+    transform-origin: top right;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &.is-open {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+    background: linear-gradient(45deg, #0f081b, #645e8c);
+    overflow: hidden;
+    }
+    
+    @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    }
+    }
+
+.button-menu:hover .button-menu__hamburger,
+.button-menu:hover .button-menu__cros,
+.button-menu:focus .button-menu__hamburger,
+.button-menu:focus .button-menu__cros {
+    fill: white;
+}

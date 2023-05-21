@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: "Roboto", "sans-serif";
   letter-spacing: 0.03em;
@@ -22,6 +26,10 @@ body{
     font-family: 'Raleway';
     font-size: 24px;
     color: var(--subtitle-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 40px;
+    }
   }
   
   ul {
@@ -38,8 +46,8 @@ body{
     padding-bottom: 30px;
 
     @media screen and (min-width:768px) {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
   }
   
@@ -55,8 +63,12 @@ body{
       max-width:480px;
     }
   
-    @media screen and (min-width:768px) and (max-width:1200px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
       max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
     }
   }
   
@@ -66,5 +78,10 @@ body{
       gap: 9px;
       border-top: 1.5px solid #898a9e;
       border-bottom: 1.5px solid #898a9e;
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      gap: 25px;
     }
   }

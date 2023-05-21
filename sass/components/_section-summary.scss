@@ -6,7 +6,7 @@
   }
   
   .section-summary__descr {
-    color: #fff;
+    color: var(--color-text);
     font-size: 18px;
     line-height: 1.17;
     overflow: scroll;
@@ -16,7 +16,7 @@
     border-radius: 8px;
     padding: 5px;
     box-shadow: 0px 0px 3px 1px;
-    background: linear-gradient(180deg, black, transparent);
+    background: linear-gradient(180deg, black, #363b4b);
   }
   
   .read-more-button {
@@ -34,3 +34,17 @@
       color: #82c5fc;
     }
   }
+
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+  .section-summary__descr {
+    font-size: 30px;
+    max-height: 300px;
+  }
+
+  .read-more-button {
+    font-size: 25px;
+  }
+}

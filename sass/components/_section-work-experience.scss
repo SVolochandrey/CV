@@ -14,7 +14,7 @@
 .section-exp__name {
   font-size: 15px;
   font-weight: bold;
-  color: #fff;
+  color: var(--color-text);
   margin-bottom: 10px;
 }
 
@@ -25,8 +25,15 @@
 }
 
 .section-exp__item {
-  color: #fff;
+  color: var(--color-text);
   font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.section-exp__item::before {
+  content: '●';
+  margin-right: 5px;
 }
 
 .section-exp__container {
@@ -42,5 +49,17 @@
   .section-exp {
     margin: auto;
     border: none;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+  .section-exp__name {
+    font-size: 30px;
+  }
+
+  .section-exp__item {
+    font-size: 20px;
   }
 }

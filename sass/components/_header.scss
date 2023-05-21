@@ -1,0 +1,31 @@
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu__container {
+    display: flex;
+}
+
+.site-nav {
+    display: flex;
+    gap: 10px;
+    @media screen and (max-width: 768px) {
+    gap: 20px;
+    flex-direction: column;
+    }
+}
+
+.header__link {
+    color: white;
+    font-size: 24px;
+}
+
+

@@ -24,7 +24,7 @@
   
   .section-proj__descr {
     font-size: 16px;
-    color: #fff;
+    color: var(--color-text);
     border-radius: 8px;
     padding: 5px;
     box-shadow: 0px 0px 3px 0px;
@@ -66,7 +66,7 @@
 
   // TABLET
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     .section-proj {
       border: none;
     }
@@ -83,3 +83,23 @@
       height: calc((100% - 25px)/3);
     }
   }
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+
+  .section-proj {
+    border: none;
+  }
+
+  .section-proj__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .section-proj__descr {
+    width: calc((100% - 60px) / 3);
+  }
+}

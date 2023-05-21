@@ -107,7 +107,7 @@
 
   // TABLET
 
-@media screen and (min-width: 768px) and (max-width:1200px) {
+@media screen and (min-width: 768px) and (max-width:1199px) {
   .section-preview__media {
     flex-direction:row;
     justify-content: space-around;
@@ -126,4 +126,38 @@
   .section-preview__descr > p {
     font-size: 29px;
    }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+  
+.section-preview__media {
+  flex-direction: row;
+}
+
+.section-preview__avatar > img {
+  width: 300px;
+  height: 300px;
+}
+
+.section-preview__socitem > a {
+  width: 60px;
+  height: 60px;
+}
+
+.section-preview__socicons {
+  width: 30px;
+  height: 30px;
+}
+
+.section-preview__descr > p,
+.section-preview__descr > h1 {
+  font-size: 49px;
+}
+
+.section-preview__soclinks {
+  margin: 20px 0 20px 0;
+}
+
 }
