@@ -16,8 +16,8 @@
 
 .site-nav {
     display: flex;
-    gap: 10px;
-    @media screen and (max-width: 768px) {
+    gap: 5px;
+    @media screen and (max-width: 767px) {
     gap: 20px;
     flex-direction: column;
     }
@@ -26,6 +26,23 @@
 .header__link {
     color: white;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+    .site-nav__item:not(:last-child) .header__link::after {
+        content: '|';
+        color: #a1a1a1;
+        margin-left: 5px;
+      }
+
+    .header__link {
+        font-size: 16px;
+    }
 }
 
 
+  
