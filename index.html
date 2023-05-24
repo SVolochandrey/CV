@@ -42,9 +42,7 @@
           <nav class="main-nav">
             <ul class="site-nav">
               <li class="site-nav__item">
-                <a href="#summary" class="header__link header__link--active"
-                  >Summary</a
-                >
+                <a href="#summary" class="header__link">Summary</a>
               </li>
               <li class="site-nav__item">
                 <a href="#tech-skills" class="header__link">Tech skills</a>
@@ -66,6 +64,25 @@
               </li>
             </ul>
           </nav>
+        </div>
+        <!-- THEME SWITCH -->
+        <div class="theme-switch">
+          <div class="state-light">Light</div>
+          <div class="sun">
+            <svg class="sun-sign" width="19px" height="19px">
+              <use href="./images/symbolDefs.svg#icon-sun"></use>
+            </svg>
+          </div>
+          <label class="form-switch">
+            <input type="checkbox" id="theme-clicker" />
+            <i></i>
+          </label>
+          <div class="state-dark">Dark</div>
+          <div class="moon">
+            <svg class="moon-sign" width="19px" height="19px">
+              <use href="./images/symbolDefs.svg#icon-moon"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </header>
@@ -362,5 +379,6 @@
     </div>
     <script src="./JS/MoreLessBtns.js"></script>
     <script src="./JS/mob-menu.js"></script>
+    <script src="./JS/theme-check.js"></script>
   </body>
 </html>
