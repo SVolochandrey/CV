@@ -111,12 +111,16 @@ section {
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid white;
-  position: relative;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header__nav {
+    position: relative;
+  }
 }
 
 .menu__container {
@@ -155,7 +159,7 @@ section {
     margin-left: 5px;
   }
   .header__link {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -754,6 +758,24 @@ section {
     font-size: 20px;
   }
 }
+.dark .state-light {
+  color: #F4F4F4;
+  opacity: 0.4;
+}
+
+.dark .state-dark {
+  color: #4B48DB;
+}
+
+.dark .sun-sign {
+  --color4: #F4F4F4;
+  opacity: 0.4;
+}
+
+.dark .moon-sign {
+  --color3: #4B48DB;
+}
+
 .is-open .theme-switch {
   padding-left: 16px;
 }
@@ -762,11 +784,14 @@ section {
   display: flex;
   gap: 11px;
 }
+@media screen and (min-width: 768px) {
+  .theme-switch {
+    margin-left: 5px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .theme-switch {
     gap: 12px;
-    position: absolute;
-    right: 0;
   }
 }
 
