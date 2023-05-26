@@ -39,7 +39,7 @@
 .section-exp__container {
   border-radius: 8px;
   padding: 5px;
-  box-shadow: 0px 0px 3px 1px;
+  box-shadow: 0px 0px 7px 3px;
   background: linear-gradient(200deg, #191919, transparent);
 }
 
@@ -62,4 +62,15 @@
   .section-exp__item {
     font-size: 20px;
   }
+}
+
+// LIGHT THEME
+
+body.light .section-exp__container {
+  background: linear-gradient(200deg, #bfbfbf, #c9c9c9);
+}
+
+body.light .section-exp__name,
+body.light .section-exp__item {
+  color: #272727;
 }

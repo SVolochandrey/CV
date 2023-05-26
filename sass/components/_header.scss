@@ -29,6 +29,7 @@
 .header__link {
   color: white;
   font-size: 24px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   position: relative;
@@ -60,4 +61,10 @@
   .header__link {
     font-size: 21px;
   }
+}
+
+// LIGHT THEME
+
+body.light .header__link {
+  color: #4d4d4d;
 }

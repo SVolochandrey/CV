@@ -1,24 +1,18 @@
-export function themeCheck() {
-  const LOCALSTORAGE_KEY = "theme";
-  let themeLight = true;
-  const selectTheme = document.querySelector("#theme-clicker");
-  const element = document.querySelector("body");
-  selectTheme.addEventListener("change", setTheme);
-
-  if (localStorage.getItem(LOCALSTORAGE_KEY) !== null) {
-    themeLight = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY));
-  }
-
-  if (!themeLight) {
-    element.classList.add("dark");
-    selectTheme.checked = true;
-  } else {
-    selectTheme.checked = false;
-  }
-
-  function setTheme() {
-    element.classList.toggle("dark");
-    themeLight = !themeLight;
-    localStorage.setItem(LOCALSTORAGE_KEY, themeLight);
-  }
-}
+const themeSwitcher = document.getElementById('theme-clicker');
+    
+    // Проверяем состояние переключателя при загрузке страницы и устанавливаем соответствующий класс темы
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light');
+      themeSwitcher.checked = true;
+    }
+    
+    // Обработчик события при изменении состояния переключателя
+    themeSwitcher.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.classList.add('light');
+        localStorage.setItem('theme', 'light'); // Сохраняем состояние темы в localStorage
+      } else {
+        document.body.classList.remove('light');
+        localStorage.setItem('theme', 'dark');
+      }
+    });

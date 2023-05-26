@@ -16,7 +16,7 @@
     gap: 10px;
     border-radius: 8px;
     padding: 5px;
-    box-shadow: 0px 0px 3px 1px;
+    box-shadow: 0px 0px 7px 3px;
     background: linear-gradient(180deg, black, transparent);
   }
   
@@ -54,4 +54,14 @@
   .section-stack__item {
     font-size: 30px;
   }
+}
+
+// LIGHT THEME
+
+body.light .section-stack__list {
+  background: linear-gradient(180deg, #bfbfbf, #c9c9c9);
+}
+
+body.light .section-stack__item {
+  color: #272727;
 }

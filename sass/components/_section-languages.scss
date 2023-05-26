@@ -11,7 +11,7 @@
     gap: 10px;
     border-radius: 8px;
     padding: 5px;
-    box-shadow: 0px 0px 3px 1px;
+    box-shadow: 0px 0px 7px 3px;
     background: linear-gradient(90deg, #211515, #343434);
   }
   
@@ -40,4 +40,14 @@
   .section-lang__item {
     font-size: 30px;
   }
+}
+
+// LIGHT THEME
+
+body.light .section-lang__list {
+  background: linear-gradient(90deg, #bfbfbf, #c9c9c9);
+}
+
+body.light .section-lang__item {
+  color: #272727;
 }

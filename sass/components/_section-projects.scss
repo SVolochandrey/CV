@@ -17,8 +17,8 @@
     gap: 15px;
     border-radius: 8px;
     padding: 5px;
-    box-shadow: 0px 0px 3px 0px;
-    background: linear-gradient(91deg, black, #262626);
+    box-shadow: 0px 0px 7px 3px;
+    background: linear-gradient(90deg, black, #262626);
 
   }
   
@@ -27,7 +27,7 @@
     color: var(--color-text);
     border-radius: 8px;
     padding: 5px;
-    box-shadow: 0px 0px 3px 0px;
+    box-shadow: 0px 0px 7px 3px;
     background: linear-gradient(180deg, black, transparent);
 
   }
@@ -103,3 +103,15 @@
     width: calc((100% - 60px) / 3);
   }
 }
+
+// LIGHT THEME
+
+body.light .section-proj__list {
+  background: linear-gradient(90deg, #bfbfbf, #c9c9c9);
+}
+
+body.light .section-proj__descr {
+  background: linear-gradient(180deg, #bfbfbf, #c9c9c9);
+  color: #272727;
+}
+

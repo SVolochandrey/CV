@@ -2,86 +2,94 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   font-family: "Roboto", "sans-serif";
   letter-spacing: 0.03em;
-  background: linear-gradient(89deg, #181818, #3f4264);
+  background: linear-gradient(90deg, #181818, #3f4264);
   background-size: cover;
   background-repeat: no-repeat;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul {
+}
+
+body.light {
+  background: linear-gradient(90deg, #ededed, #939393);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   padding: 0;
   margin: 0;
-  }
-  
-  h3 {
-    font-family: 'Raleway';
-    font-size: 24px;
-    color: var(--subtitle-color);
+}
 
-    @media screen and (min-width: 1200px) {
-      font-size: 40px;
-    }
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+h3 {
+  font-family: "Raleway";
+  font-size: 24px;
+  color: var(--subtitle-color);
 
-    @media screen and (min-width:768px) {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
   }
-  
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  
-    @media screen and (max-width: 479px) {
-      max-width: 380px;
-    }
-  
-    @media screen and (min-width:480px) and (max-width:767px) {
-      max-width:480px;
-    }
-  
-    @media screen and (min-width:768px) and (max-width:1199px) {
-      max-width: 768px;
-    }
+}
 
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-    }
-  }
-  
-  .section-container {
-    @media screen and (min-width:768px) {
-      display:flex;
-      gap: 9px;
-      border-top: 1.5px solid #898a9e;
-      border-bottom: 1.5px solid #898a9e;
-    }
+body.light h3 {
+  color: #4d4d4d;
+}
 
-    @media screen and (min-width: 1200px) {
-      align-items: center;
-      gap: 25px;
-    }
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 479px) {
+    max-width: 380px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.section-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 9px;
+    border-top: 1.5px solid #898a9e;
+    border-bottom: 1.5px solid #898a9e;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    gap: 25px;
+  }
+}
