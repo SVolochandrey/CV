@@ -68,3 +68,8 @@
 body.light .header__link {
   color: #4d4d4d;
 }
+
+body.light .header__link:hover,
+body.light .header__link:active {
+  color: #9b3535;
+}
