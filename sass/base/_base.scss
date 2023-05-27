@@ -52,11 +52,6 @@ a {
 section {
   padding-top: 30px;
   padding-bottom: 30px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
 }
 
 .container {
@@ -84,8 +79,8 @@ section {
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 9px;
-    border-top: 1.5px solid #898a9e;
-    border-bottom: 1.5px solid #898a9e;
+    border-top: 1.5px solid #b4b4b4;
+    border-bottom: 1.5px solid #b4b4b4;
   }
 
   @media screen and (min-width: 1200px) {

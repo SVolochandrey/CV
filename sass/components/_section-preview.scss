@@ -2,7 +2,7 @@
 
 .section-preview {
     padding-bottom: 0;
-    border-bottom: 3px solid #898a9e;
+    border-bottom: 3px solid #b4b4b4;
     border-radius: 2%;
   }
   
@@ -167,4 +167,12 @@
 body.light .section-preview__descr > p,
 body.light .section-preview__descr > h1 {
   color: #4d4d4d;
+}
+
+body.light .section-preview__socitem > a {
+  background-color: #e3e9fa;
+}
+
+body.light .section-preview__socitem > a:hover {
+ background-color: #fff;
 }
