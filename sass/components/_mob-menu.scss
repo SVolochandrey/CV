@@ -65,8 +65,8 @@
     transform: scaleX(0);
     transform-origin: top right;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
       pointer-events: auto;
@@ -83,5 +83,12 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+  }
+}
+
+// LIGHT THEME
+@media screen and (max-width: 767px) {
+  body.light .menu__container.is-open {
+    background: linear-gradient(270deg, #bfbfbf, #c9c9c9);
   }
 }
