@@ -73,7 +73,7 @@
       opacity: 1;
       visibility: visible;
       transform: scaleX(1);
-      background: linear-gradient(45deg, #0f081b, #525b86);
+      background: linear-gradient(270deg, #181818, #5f5f5f);
       overflow: hidden;
     }
   }
@@ -91,4 +91,11 @@
   body.light .menu__container.is-open {
     background: linear-gradient(270deg, #bfbfbf, #c9c9c9);
   }
+}
+
+body.light .button-menu:hover .button-menu__hamburger,
+body.light .button-menu:hover .button-menu__cros,
+body.light .button-menu:focus .button-menu__hamburger,
+body.light .button-menu:focus .button-menu__cros {
+  fill: #ffffff;
 }

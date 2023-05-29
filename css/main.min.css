@@ -6,7 +6,7 @@ html {
 body {
   font-family: "Roboto", "sans-serif";
   letter-spacing: 0.03em;
-  background: linear-gradient(90deg, #181818, #3f4264);
+  background: linear-gradient(90deg, #181818, #5f5f5f);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -88,13 +88,8 @@ section {
 @media screen and (min-width: 768px) {
   .section-container {
     display: flex;
-    gap: 9px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-container {
+    gap: 20px;
     align-items: center;
-    gap: 25px;
   }
 }
 
@@ -146,7 +141,7 @@ section {
 }
 @media screen and (max-width: 767px) {
   .site-nav {
-    gap: 20px;
+    gap: 24px;
     flex-direction: column;
   }
 }
@@ -262,7 +257,7 @@ body.light .header__link:active {
     opacity: 1;
     visibility: visible;
     transform: scaleX(1);
-    background: linear-gradient(45deg, #0f081b, #525b86);
+    background: linear-gradient(270deg, #181818, #5f5f5f);
     overflow: hidden;
   }
 }
@@ -280,6 +275,13 @@ body.light .header__link:active {
     background: linear-gradient(270deg, #bfbfbf, #c9c9c9);
   }
 }
+body.light .button-menu:hover .button-menu__hamburger,
+body.light .button-menu:hover .button-menu__cros,
+body.light .button-menu:focus .button-menu__hamburger,
+body.light .button-menu:focus .button-menu__cros {
+  fill: #ffffff;
+}
+
 .section-educ__title {
   display: flex;
   justify-content: center;
@@ -317,11 +319,11 @@ body.light .header__link:active {
 }
 @media screen and (min-width: 1200px) {
   .section-educ {
-    max-width: 60%;
+    max-width: 70%;
     margin: auto;
   }
   .section-educ__item {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 body.light .section-educ__list {
@@ -366,7 +368,7 @@ body.light .section-educ__item {
 }
 @media screen and (min-width: 1200px) {
   .section-lang__item {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 body.light .section-lang__list {
@@ -394,7 +396,7 @@ body.light .section-lang__item {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 10px rgba(177, 177, 177, 0.2);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .section-preview__descr {
@@ -673,7 +675,7 @@ body.light .section-proj__link:hover {
 
 @media screen and (min-width: 1200px) {
   .section-soft__item {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 body.light .section-soft__list {
@@ -728,7 +730,7 @@ body.light .section-soft__item {
 }
 @media screen and (min-width: 1200px) {
   .section-stack__item {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 body.light .section-stack__list {
@@ -775,7 +777,7 @@ body.light .section-stack__item {
 
 @media screen and (min-width: 1200px) {
   .section-summary__descr {
-    font-size: 30px;
+    font-size: 25px;
     max-height: 300px;
   }
   .read-more-button {
@@ -836,7 +838,7 @@ body.light .section-summary__descr {
     font-size: 30px;
   }
   .section-exp__item {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 body.light .section-exp__container {
@@ -849,12 +851,16 @@ body.light .section-exp__item {
 }
 
 body.light .state-light {
-  color: #4b48db;
+  color: #feff00;
   opacity: 0.4;
+  box-shadow: 0px 0px 3px 1px;
+  transform: scale(1.2);
 }
 
 body.light .state-dark {
-  color: #f4f4f4;
+  color: #272727;
+  box-shadow: none;
+  transform: none;
 }
 
 body.light .sun-sign {
@@ -917,13 +923,13 @@ body.light .moon-sign {
 }
 @media screen and (min-width: 1200px) {
   .state-light {
-    display: block;
-    color: #4b48db;
-    font-family: "Poppins";
+    display: flex;
+    color: #9f9354;
     font-style: normal;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 1.33;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
   }
 }
 
@@ -932,13 +938,16 @@ body.light .moon-sign {
 }
 @media screen and (min-width: 1200px) {
   .state-dark {
-    display: block;
-    color: #5f6775;
-    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    color: #272727;
     font-style: normal;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 1.33;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px 1px;
+    transform: scale(1.1);
+    border-radius: 5px;
+    transform: scale(1.2);
   }
 }
 
@@ -982,7 +991,7 @@ body.light .moon-sign {
   left: 0;
   width: 22px;
   height: 22px;
-  background-color: #4b48db;
+  background-color: #2e2e2e;
   border-radius: 11px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
   transform: translate3d(2px, 2px, 0);
@@ -1003,7 +1012,7 @@ body.light .moon-sign {
 }
 
 .form-switch input:checked + i {
-  background-color: #4b48db;
+  background-color: #2e2e2e;
 }
 
 .form-switch input:checked + i::before {
