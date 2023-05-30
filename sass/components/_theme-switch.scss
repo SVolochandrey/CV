@@ -1,3 +1,14 @@
+.moon-sign {
+  --color3: #9a5c9c;
+  box-shadow: 0px 0px 3px 1px #9a5c9c;
+  border-radius: 5px;
+  transform: scale(1.2);
+}
+
+.sun-sign {
+  --color4: #9f9354;;
+}
+
 body.light .state-light {
   color: #feff00;
   opacity: 0.4;
@@ -12,12 +23,17 @@ body.light .state-dark {
 }
 
 body.light .sun-sign {
-  color: #4b48db;
+  --color4: #feff00;
   opacity: 0.4;
+  box-shadow: 0px 0px 3px 1px #feff00;
+  transform: scale(1.2);
+  border-radius: 5px;
 }
 
 body.light .moon-sign {
-  --color3: #f4f4f4;
+  --color3: #272727;
+  transform: none;
+  box-shadow: none;
 }
 
 // theme-checker
@@ -37,10 +53,6 @@ body.light .moon-sign {
   @media screen and (min-width: 1200px) {
     gap: 12px;
   }
-}
-
-.sun-sign {
-  fill: #4b48db;
 }
 
 .sun {
