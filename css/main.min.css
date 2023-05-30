@@ -240,7 +240,7 @@ body.light .header__link:active {
   width: 100%;
   z-index: 1;
   background-color: var(--color-background-1);
-  padding: 40px;
+  padding: 40px 0 40px 0;
 }
 @media screen and (max-width: 767px) {
   .menu__container {
