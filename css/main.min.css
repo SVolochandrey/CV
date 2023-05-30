@@ -188,7 +188,7 @@ body.light .header__link:active {
 .button-menu {
   display: inline-flex;
   position: absolute;
-  right: 15px;
+  right: 0;
   cursor: pointer;
   padding: 0;
   margin: 0;
