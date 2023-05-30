@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7px;
+  gap: 5px;
   padding: 0;
   margin: 10px 0 15px 0;
 }
@@ -115,10 +115,6 @@
   .section-preview__media {
     flex-direction: row;
     justify-content: space-around;
-  }
-
-  .section-preview__soclinks {
-    gap: 5px;
   }
 
   .section-preview__socitem > a {
