@@ -115,6 +115,12 @@ section {
   justify-content: space-between;
 }
 
+.footer__soclinks {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -333,7 +339,7 @@ body.light .section-educ__list {
 }
 
 body.light .section-educ__item {
-  color: #272727;
+  color: var(--light-theme-texts);
 }
 
 .section-lang__title {
@@ -378,7 +384,7 @@ body.light .section-lang__list {
 }
 
 body.light .section-lang__item {
-  color: #272727;
+  color: var(--light-theme-texts);
 }
 
 .section-preview {
@@ -398,7 +404,7 @@ body.light .section-lang__item {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
 }
 
 .section-preview__descr {
@@ -428,14 +434,13 @@ body.light .section-lang__item {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  padding: 0;
   margin: 10px 0 15px 0;
 }
 
 .section-preview__socitem > a {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border: 0;
   border-radius: 50%;
   justify-content: center;
@@ -487,10 +492,6 @@ body.light .section-lang__item {
     flex-direction: row;
     justify-content: space-around;
   }
-  .section-preview__socitem > a {
-    width: 40px;
-    height: 40px;
-  }
   .section-preview__descr > h1,
   .section-preview__descr > p {
     font-size: 29px;
@@ -509,8 +510,8 @@ body.light .section-lang__item {
     height: 300px;
   }
   .section-preview__socitem > a {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   .section-preview__socicons {
     width: 30px;
@@ -535,6 +536,10 @@ body.light .section-preview__socitem > a {
 
 body.light .section-preview__socitem > a:hover {
   background-color: #fff;
+}
+
+body.light .section-preview__avatar > img {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .section-proj__title {
@@ -633,7 +638,7 @@ body.light .section-proj__list {
 
 body.light .section-proj__descr {
   background: linear-gradient(180deg, #bfbfbf, #c9c9c9);
-  color: #272727;
+  color: var(--light-theme-texts);
 }
 
 body.light .section-proj__link {
@@ -682,7 +687,7 @@ body.light .section-soft__list {
 }
 
 body.light .section-soft__item {
-  color: #272727;
+  color: var(--light-theme-texts);
 }
 
 .section-stack__item::before {
@@ -737,7 +742,7 @@ body.light .section-stack__list {
 }
 
 body.light .section-stack__item {
-  color: #272727;
+  color: var(--light-theme-texts);
 }
 
 .section-summary__title {
@@ -784,7 +789,7 @@ body.light .section-stack__item {
   }
 }
 body.light .section-summary__descr {
-  color: #272727;
+  color: var(--light-theme-texts);
 }
 
 .section-exp__title {
@@ -846,7 +851,7 @@ body.light .section-exp__container {
 
 body.light .section-exp__name,
 body.light .section-exp__item {
-  color: #272727;
+  color: var(--light-theme-texts);
 }
 
 .moon-sign {
@@ -868,7 +873,7 @@ body.light .state-light {
 }
 
 body.light .state-dark {
-  color: #272727;
+  color: var(--light-theme-texts);
   box-shadow: none;
   transform: none;
 }
@@ -882,7 +887,7 @@ body.light .sun-sign {
 }
 
 body.light .moon-sign {
-  --color3: #272727;
+  --color3: var(--light-theme-texts);
   transform: none;
   box-shadow: none;
 }
@@ -952,7 +957,7 @@ body.light .moon-sign {
   .state-dark {
     display: flex;
     align-items: center;
-    color: #272727;
+    color: var(--light-theme-texts);
     font-style: normal;
     font-size: 18px;
     font-weight: bold;

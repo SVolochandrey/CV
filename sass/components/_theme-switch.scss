@@ -17,7 +17,7 @@ body.light .state-light {
 }
 
 body.light .state-dark {
-  color: #272727;
+  color: var(--light-theme-texts);
   box-shadow: none;
   transform: none;
 }
@@ -31,7 +31,7 @@ body.light .sun-sign {
 }
 
 body.light .moon-sign {
-  --color3: #272727;
+  --color3: var(--light-theme-texts);
   transform: none;
   box-shadow: none;
 }
@@ -93,7 +93,7 @@ body.light .moon-sign {
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    color: #272727;
+    color: var(--light-theme-texts);
     font-style: normal;
     font-size: 18px;
     font-weight: bold;

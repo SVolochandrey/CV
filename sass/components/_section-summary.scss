@@ -60,5 +60,5 @@
 
 body.light .section-summary__descr {
   // background: linear-gradient(180deg, #bfbfbf, #c9c9c9);
-  color: #272727;
+  color: var(--light-theme-texts);
 }

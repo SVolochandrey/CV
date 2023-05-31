@@ -66,5 +66,5 @@ body.light .section-exp__container {
 
 body.light .section-exp__name,
 body.light .section-exp__item {
-  color: #272727;
+  color: var(--light-theme-texts);
 }

@@ -112,7 +112,7 @@ body.light .section-proj__list {
 
 body.light .section-proj__descr {
   background: linear-gradient(180deg, #bfbfbf, #c9c9c9);
-  color: #272727;
+  color: var(--light-theme-texts);
 }
 
 body.light .section-proj__link {
