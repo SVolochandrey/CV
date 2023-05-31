@@ -52,6 +52,10 @@ a {
 section {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media screen and (max-width:767px) {
+    border-bottom: 1.5px solid #b4b4b4;
+  }
 }
 
 .container {
@@ -76,12 +80,10 @@ section {
 }
 
 .section-container {
-  border-top: 1.5px solid #b4b4b4;
-  border-bottom: 1.5px solid #b4b4b4;
-
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 20px;
     align-items: center;
+    border-bottom: 1.5px solid #b4b4b4;
   }
 }

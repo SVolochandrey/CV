@@ -14,13 +14,7 @@
   transition: max-height 0.7s ease;
   max-height: 150px;
   padding: 5px;
-  // background: linear-gradient(180deg, black, #363b4b);
 }
-
-// .section-summary__descr:hover {
-//   box-shadow: 0px 0px 3px 1px;
-//   transform: scale(1.05);
-// }
 
 .read-more-button {
   margin-top: 15px;
@@ -38,10 +32,13 @@
   }
 }
 
-// .section-summary__container {
-//   box-shadow: 0px 0px 7px 3px;
-//   border-radius: 8px;
-// }
+// TABLET
+
+@media screen and (min-width: 768px) {
+  .section-summary {
+    border-bottom: 1.5px solid #b4b4b4;
+  }
+}
 
 // DESKTOP
 
@@ -59,6 +56,5 @@
 // LIGHT THEME
 
 body.light .section-summary__descr {
-  // background: linear-gradient(180deg, #bfbfbf, #c9c9c9);
   color: var(--light-theme-texts);
 }
